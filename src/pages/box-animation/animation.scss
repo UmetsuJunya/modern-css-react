@@ -1,0 +1,47 @@
+.box-animation {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .box {
+        content: "";
+        background-color: aqua;
+        width: 10rem;
+        height: 10rem;
+
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 0ms;
+
+        animation-name: rollingAnimation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+    .box:hover {
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 0ms;
+        background-color: black;
+    }
+}
+
+@keyframes rollingAnimation {
+    0% {
+        transform: rotate(0deg) scale(0.1);
+        transform-origin: top left;
+    }
+
+    50% {
+        transform: rotate(90deg) scale(2);
+        transform-origin: top left;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.1);
+        transform-origin: top left;
+    }
+}

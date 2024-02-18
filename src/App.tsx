@@ -34,54 +34,56 @@ const ListItem: React.FC<ListItemProps> = ({ index, icon, link, children }) => {
 
 const YourComponent: React.FC = () => {
   return (
-    <section className="app-section">
-      <div>
-        <ul className="app-box-ul">
-          <ListItem
-            index={6}
-            icon={<FontAwesomeIcon icon={faHouse} />}
-            link={"/"}
-          >
-            Home
-          </ListItem>
-          <ListItem
-            index={5}
-            icon={<FontAwesomeIcon icon={faBars} />}
-            link={"/menu-indicator"}
-          >
-            Menu Indicator
-          </ListItem>
-          <ListItem
-            index={4}
-            icon={<FontAwesomeIcon icon={faList} />}
-            link={"#"}
-          >
-            Not installed
-          </ListItem>
-          <ListItem
-            index={3}
-            icon={<FontAwesomeIcon icon={faFolderOpen} />}
-            link={"#"}
-          >
-            Portfolio
-          </ListItem>
-          <ListItem
-            index={2}
-            icon={<FontAwesomeIcon icon={faHouse} />}
-            link={"#"}
-          >
-            Our Team
-          </ListItem>
-          <ListItem
-            index={1}
-            icon={<FontAwesomeIcon icon={faHouse} />}
-            link={"#"}
-          >
-            Contact
-          </ListItem>
-        </ul>
-      </div>
-    </section>
+    <div>
+      <section className="app-section">
+        <div>
+          <ul className="app-box-ul">
+            <ListItem
+              index={6}
+              icon={<FontAwesomeIcon icon={faHouse} />}
+              link={"/"}
+            >
+              Home
+            </ListItem>
+            <ListItem
+              index={5}
+              icon={<FontAwesomeIcon icon={faBars} />}
+              link={"/menu-indicator"}
+            >
+              Menu Indicator
+            </ListItem>
+            <ListItem
+              index={4}
+              icon={<FontAwesomeIcon icon={faList} />}
+              link={"/add-tag"}
+            >
+              ADD Tag
+            </ListItem>
+            <ListItem
+              index={3}
+              icon={<FontAwesomeIcon icon={faFolderOpen} />}
+              link={"/Lamp"}
+            >
+              Lamp
+            </ListItem>
+            <ListItem
+              index={2}
+              icon={<FontAwesomeIcon icon={faHouse} />}
+              link={"/box-animation"}
+            >
+              Box Animation
+            </ListItem>
+            <ListItem
+              index={1}
+              icon={<FontAwesomeIcon icon={faHouse} />}
+              link={"/dropdown"}
+            >
+              Dropdown
+            </ListItem>
+          </ul>
+        </div>
+      </section>
+    </div>
   )
 }
 
